@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>CS2024 Project SG Money Lender</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+  <style>
+     body {
+           margin: 0px;
+           padding: 0px;
+           font-size: 16px;
+           color: #000000;
+		   font-family: 'Open Sans';
+     }
+
+    .topnav {
+             background-color: #000;
+             overflow: hidden;
+    }
+
+
+    .topnav a {
+               float: right;
+               color: #f2f2f2;
+               text-align: center;
+               padding: 30px 16px;
+               text-decoration: none;
+               font-size: 17px;
+    }
+
+
+    .topnav a:hover {
+                     background-color: #FFCD05;
+                     color: black;
+    }
+
+	.logo {
+           position:absolute;
+           margin: 0;
+           width: 135px;
+           height: 76px;
+     }
+
+
+     #banner {
+              width: 100%;
+              height: 400px;
+              overflow: hidden;
+     }
+
+     .container {
+                 width: 80%;
+                 margin: auto;
+     }
+
+     .container p {
+                   font-size: 16px;
+                   font-family: 'Open Sans';
+                   line-height: 30px;
+     }
+
+     .button {
+              padding: 10px 20px;
+              background-color: #001234;
+              color: #ffffff;
+              text-decoration: none;
+              font-family: 'Open Sans';
+              font-size: 16px;
+              border-style: none;
+     }
+
+     .button:hover {
+                    background-color: #FFCD05;
+                    color: black;
+     }
+
+     .inputbox {
+                border: solid 1px black;
+                padding: 10px;
+                border-radius: 5px;
+                width: 100%;
+                font-family: 'Open Sans';
+     }
+
+     footer {
+             margin: 0px;
+             padding: 15px;
+             font-size: 16px;
+             font-family: 'Open Sans';
+             background-color: #001234;
+             color: #ffffff;
+             text-align: center;
+     }
+
+  </style>
+ </head>
+
+ <body>
+    <div class="topnav">
+        <a href="index.html" style="float: left; padding: 0px 16px;"><img class="logo" src="https://cutedoggies.github.io/CS2024projectHTML/CS2024github/logo.png" alt="image" id="logo"></a>
+        <a href="applynow.html">Apply Now</a>
+        <a class="active" href="product.html">Our Products</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <div class="container">
+     <table width="800" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+       <td align="center" valign="top">
+        <h1 style="text-align: center;">Apply for A Loan</h1>
+        <p style="font-family:Open Sans">Please provide us with your details so that we can process your loan application online.
+        We will get back to you shortly to arrange for an appointment.</p>
+       </td>
+      </tr>
+
+      <tr>
+       <td align="left" valign="top">
+        <form id="application" name="form" method="post" action="#">
+         <table cellpadding="5" cellspacing="5" width="100%" align="center">
+          <tr>
+           <td width="40%">
+            Full Name*:
+           </td>
+           <td>
+            <input type="text" name="name" value="" required class="inputbox">
+           </td>
+          </tr>
+          <tr>
+           <td width="30%">
+            Email*:
+           </td>
+           <td>
+            <input type="email" name="email" value="" required class="inputbox">
+           </td>
+          </tr>
+          <tr>
+           <td width="40%">
+            Monthly Income*:
+           </td>
+           <td>
+            <input type="text" name="income" value="" required class="inputbox">
+           </td>
+          </tr>
+          <tr>
+           <td width="40%">
+            Required Loan Type*:
+           </td>
+           <td>
+            <input type="radio" name="loantype" value="P" checked>
+             Personal Loan<br>
+            <input type="radio" name="loantype" value="W">
+             Wedding Loan<br>
+            <input type="radio" name="loantype" value="E">
+             Education Loan<br>
+            <input type="radio" name="loantype" value="C">
+             COVID-19 Loan<br>
+            <input type="radio" name="loantype" value="M">
+             Medical Loan<br>
+           </td>
+          </tr>
+          <tr>
+           <td width="40%">
+            Required Loan Amount*:
+           </td>
+           <td>
+            <input type="text" name="amount" value="" required class="inputbox">
+           </td>
+          </tr>
+          <tr>
+           <td width="40%">
+            Preferred Appointment Date*:
+           </td>
+           <td>
+            <input type="date" name="date" value="" required class="inputbox">
+           </td>
+          </tr>
+          <tr>
+           <td width="40%">
+            Additional Comments:
+           </td>
+           <td>
+            <textarea name="message" rows="10" cols="30" value="" class="inputbox"></textarea>
+           </td>
+          </tr>
+          <tr>
+           <td></td>
+           <td>
+            By submitting this form, you agree to be contacted with the information above.
+           </td>
+          </tr>
+          <tr>
+           <td></td>
+           <td>
+            <input type="submit" name="submit" value="Submit" class="button"> |
+            <input type="reset" name="reset" value="Reset" class="button">
+           </td>
+          </tr>
+         </table>
+        </form>
+       </td>
+      </tr>
+     </table>
+     <br><br><br>
+    </div>
+
+   <footer>
+     <p> 50 Nanyang Avenue, Blk 22, Singapore 639798<br>
+     +65 6790 0976<br>
+     hello@sgmoneylender.com
+     </p>
+    <p style="font-size: 12px">Copyright &copy; 2020 SG Money Lender Pte Ltd. All rights reserved.</p>
+   </footer>
+
+ </body>
+</html>
+
